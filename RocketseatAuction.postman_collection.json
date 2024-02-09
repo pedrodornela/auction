@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "10cae6b5-ca4a-4990-ba65-0be641762fc7",
+		"name": "RocketseatAuction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27101740"
+	},
+	"item": [
+		{
+			"name": "POST OFFER",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "bHVjaW1hckBsdWNpbWFyLmNvbQ==",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"price\": {{$randomPrice}}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URLBASE}}/Offer/2",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"Offer",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET AUCTION",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URLBASE}}/Auction",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"Auction"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URLBASE",
+			"value": "https://localhost:7232",
+			"type": "string"
+		}
+	]
+}
