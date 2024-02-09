@@ -8,15 +8,16 @@
 - Esta API permite:
   - A consulta de leilões existentes no banco de dados
   - Criar ofertas para os itens do leilão
- 
+
 ![Windows][windows]
 ![VisualStudio][visualStudio]
 ![.NET][dotnet]
 ![SQLite][Sqlite]
 
-
-
+## **🧐 Obs:**
+- Realizei um pequeno exemplo das chamadas das requisições pelo PostMan.
 ---
+
 
 <!---Shields--->
 [windows]: https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white
